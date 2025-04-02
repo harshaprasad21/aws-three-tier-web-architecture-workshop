@@ -20,13 +20,18 @@ jobs:
           node-version: '18.20.4'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd application-code/web-tier
+          npm install
 
       - name: Build project
-        run: npm run build
+        run: |
+          cd application-code/web-tier
+          npm run build
 
       - name: Verify Build Output
         run: |
+          cd application-code/web-tier
           # List contents of dist directory for verification
           ls -la .
 
