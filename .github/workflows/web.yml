@@ -1,11 +1,11 @@
-name: Deploy to AWWS EC2
+name: Deploy to AWS EC2
 
 on:
   push:
     branches:
       - main
     paths:
-      - "application-code/web-tier/"
+      - "application-code/web-tier/**"
 
 jobs:
   deploy:
