@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "application-code/web-tier/**"
+      - "application-code/web-tier/*"
       
 
 jobs:
