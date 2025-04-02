@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - "application-code/web-tier/*"
+      - "application-code/web-tier/**"
+      - ".github/workflows/main.yml"
       
 
 jobs:
